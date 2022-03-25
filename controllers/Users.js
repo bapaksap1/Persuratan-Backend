@@ -13,7 +13,7 @@ export const getUsers = async(req, res) => {
         res.status(404).json({message:"user not found"})
     }
 }
-
+console.log("KAKAKAKA");
 export const Register = async(req, res) => {
     const { name, email, password, confpassword }= req.body;
     if(password !== confpassword) return res.status(400).json({msg: "Password tidak cocok"})
