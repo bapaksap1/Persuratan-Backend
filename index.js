@@ -1,5 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
+import cookieParser from "cookie-parser";
 import db from "./config/database.js";
 import router from "./routes/index.js";
 //import Users from "./model/UserModel.js";
@@ -14,7 +15,8 @@ try {
   console.error(error);
 }
 
-app.use(express.json())
-app.use(router)
+app.use(cookieParser());
+app.use(express.json());
+app.use(router);
 
 app.listen(5000, () => console.log("Server running at port 5000"));

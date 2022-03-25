@@ -1,4 +1,5 @@
 GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJOYXVmYWwgRmFraHJpIiwiZW1haWwiOiJuZmFraHJpMTQxMkBnbWFpbC5jb20iLCJpYXQiOjE2NDgyMTc5MzQsImV4cCI6MTY0ODIxODkzNH0.jKoINXe_jtWtNyX--uIAzeK_A5Eubzk6oDORdGajNOU
 
 ###
 POST http://localhost:5000/users
@@ -17,6 +18,14 @@ POST http://localhost:5000/login
 Content-Type: application/json
 
 {
-    "email" : "luqman@gmail.com",
+    "email" : "nfakhri1412@gmail.com",
     "password" : "123456"
 }
+
+###
+GET http://localhost:5000/token
+Content-Type: application/json
+
+###
+DELETE  http://localhost:5000/logout
+Content-Type: application/json
