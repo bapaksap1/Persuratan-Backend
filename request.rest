@@ -29,3 +29,37 @@ Content-Type: application/json
 ###
 DELETE  http://localhost:5000/logout
 Content-Type: application/json
+
+###
+POST  http://localhost:5000/inputsurat
+Content-Type: application/json
+
+{
+    "tanggal": "{CurrentDatetime}",
+    "no_surat" : "A/01.001/DK/I/2021",
+    "keterangan": "Test Surat"
+}
+
+###
+GET http://localhost:5000/tampilsurat
+
+###
+DELETE http://localhost:5000/tampilsurat
+Content-Type: application/json
+
+{
+    "id" : 2
+}
+
+###
+put http://localhost:5000/tampilsurat
+Content-Type: application/json
+
+{
+    "id" : 3,
+    "tanggal": "{CurrentDatetime}",
+    "no_surat" : "A/01.001/DK/I/2021",
+    "keterangan": "Test Surat xixixi"
+}
+
+

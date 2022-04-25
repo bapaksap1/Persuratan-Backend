@@ -20,4 +20,19 @@ const Users = db.define('users',{
     freezeTableName:true
 });
 
+export const SuratKeluar = db.define('surat_keluar',{
+    tanggal:{
+        type: DataTypes.DATEONLY
+    },
+    no_surat:{
+        type: DataTypes.STRING
+    },
+    keterangan:{
+        type : DataTypes.STRING
+    },
+ },{
+    freezeTableName:true
+});
+
+
 export default Users;
