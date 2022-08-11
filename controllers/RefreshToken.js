@@ -20,6 +20,7 @@ export const refreshToken = async(req,res) => {
         expiresIn : "1000s"
       } );
       res.json ({ accessToken });
+      console.log("Test 1")
     });
   } catch (error) {
       console.log(error);

@@ -2,6 +2,10 @@ GET http://localhost:5000/users
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJOYXVmYWwgRmFraHJpIiwiZW1haWwiOiJuZmFraHJpMTQxMkBnbWFpbC5jb20iLCJpYXQiOjE2NDg2MjgwNzMsImV4cCI6MTY0ODYyOTA3M30.Xugi_SCqBHMjdU5PZhB4HTzWooA8CNAaOUviJ_hLVJ4
 
 ###
+GET http://localhost:5000/allusers
+Content-Type: application/json
+
+###
 POST http://localhost:5000/users
 Content-Type: application/json
 

@@ -4,7 +4,7 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import db from "./config/database.js";
 import router from "./routes/index.js";
-//import Users from "./model/UserModel.js";
+// import Users from "./model/UserModel.js";
 //import SuratKeluar from "./model/Sur_KelModel.js";
 
 dotenv.config();

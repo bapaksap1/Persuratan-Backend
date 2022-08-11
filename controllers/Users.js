@@ -19,6 +19,18 @@ export const getUsers = async(req, res) => {
     }
 }
 
+export const getAllUsers = async(req, res) => {
+    try {
+        const users = await Users.findAll({
+        });
+        console.log(users);
+        res.json(users);
+    } catch (error) {
+        console.log(error);
+        res.status(404).json({message:"user not found"})
+    }
+}
+
 export const Register = async(req, res) => {
     const { name, email, password, confPassword }= req.body;
     if(password !== confPassword) return res.status(400).json({msg: "Password tidak cocok"})
